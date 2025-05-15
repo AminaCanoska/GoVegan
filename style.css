@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+:root {
+  --animate-delay: 0.5s;
+}
+body {
+     font-family: "Roboto", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: normal;
+     font-variation-settings:
+    "wdth" 100;
+}
+.navbar-brand span {
+    color: rgb(126, 246, 86);
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+     font-family: "Oswald", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: normal;
+}
+.navbar {
+    background-color: rgba(122, 122, 122, 0.4); /* bianco molto trasparente */
+    backdrop-filter: blur(12px); /* sfocatura dello sfondo dietro */
+    -webkit-backdrop-filter: blur(12px); /* compatibilità Safari */
+}
+.d-block {
+    filter: brightness(70%);
+}
+.carousel-item {
+    height: 80vh; /* Puoi modificare l'altezza come vuoi */
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ritaglia e riempie lo spazio mantenendo le proporzioni */
+}
+.carousel-caption {
+    bottom: 13rem;   
+}
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ritaglia e riempie lo spazio mantenendo le proporzioni */
+}
+.img-resized {
+    max-width: 300px ;
+}
+.content-box {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    width: 100%;
+    text-align: center !important;
+  }
+}
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  will-change: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+.col-md-6 span {
+    color: rgb(126, 246, 86);
+}
+
+.list-unstyled i {
+    color: rgb(126, 246, 86); 
+}
+.d-flex i {
+    color: rgb(126, 246, 86);
+}
+.carousel-slide {
+    max-width: 50vw;
+}
+.carousel-inner {
+  height: 75vh; /* o qualsiasi altezza desideri */
+}
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+    font-size: 0.8;
+    height: 15vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+/*PAGINA ABOUT*/
+
+.staff {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.bg-blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-text {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4); /* optional for better readability */
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    left: 20%;
+    top: 50%;
+    width: 80%;
+    text-align: start;
+  }
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/*MENU*/
+#appetizers-tab, #mains-tab, #desserts-tab {
+    color: rgb(126, 246, 86);
+}
+#appetizers-tab, #mains-tab, #desserts-tab:hover {
+    color: green
+}
